@@ -1,0 +1,126 @@
+/* given code */
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    /* main code starts here */
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+    .main_structure{
+        font-family: 'HankenGrotesk', serif;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+        border-radius: 25px;
+        box-shadow: 5px 5px 15px rgb(174, 174, 174);
+        
+    }
+
+    button{
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        padding: 15px 40px;
+        margin: 15px 0;
+        width: 100%;
+
+        border-radius: 25px;
+    }
+    button:hover{
+        background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        cursor: pointer;
+    }
+
+/* left-info-design */
+.left_info{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+
+    border-radius: 17px;
+}
+
+.score{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.score h1{
+    font-size: 45px;
+}
+
+/* right-info-design */
+.right_info{
+    padding: 8px 20px;
+    width: 450px;
+    margin: 5px 0px;
+
+}
+
+.component__sum{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 0 5px;
+}
+
+.component__sum h4{
+    margin: 5px 5px;
+    padding: 5px 0;
+}
+
+.icon_name{
+    display: flex;
+}
+.icon_name img{
+    padding: 0 5px 0 3px;
+}
+
+.Reaction{
+    background-color: hsl(0, 100%, 96%);
+    border-radius: 10px;
+    color: hsl(0, 100%, 67%);
+}
+
+.Memory{
+    background-color: hsl(35, 100%, 96%);
+    border-radius: 15px;
+    color: hsl(39, 100%, 56%);
+}
+
+.Verbal{
+    background-color: hsl(165, 100%, 91%);
+    border-radius: 15px;
+    color: hsl(166, 100%, 37%);
+}
+
+.Visual{
+    background-color: hsl(232, 96%, 91%);
+    border-radius: 15px;
+    color: hsl(234, 85%, 45%);
+}
+
+
+@media (max-width: 760px) {
+    .main_structure{
+        flex-direction: column;
+        width: 350px;
+        padding: 0px;
+        border: none;
+        box-shadow: none;
+    }
+
+    .left_info{
+        border-radius: 0px 0px 15px 15px;
+    }
+    .right_info{
+        margin: 10px auto;
+        width: 300px;
+    }
+}
